@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" type="text/css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="input">
+            <input type="text" placeholder="Enter your tasks">
+            <i class="fa fa-tasks" class="task-icon"></i>
+        </div>
+        <div class="filters">
+            <div class="filter">
+                <span id="all" class="filter-tags active">All</span>
+                <span id="pending" class="filter-tags">Pending</span>
+                <span id="completed" class="filter-tags">Completed</span>
+            </div>
+            <button>Clear All</button>
+        </div>
+        <div class="tasks">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

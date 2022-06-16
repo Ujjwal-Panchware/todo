@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+body {
+    background-color: #00a2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 12px 12px 15px;
+    width: 500px;
+    height: max-content;
+    max-height: 370px;
+}
+
+.input {
+    padding: 20px 20px 0;
+    position: relative;
+}
+
+.input input {
+    position: relative;
+    padding: 8px 0 8px 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.input i {
+    position: absolute;
+    left: 32px;
+    top: 33px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.filters .filter {
+    display: flex;
+    justify-content: start;
+    flex: 90;
+    padding-right: 15px;
+}
+
+.filters span {
+    cursor: pointer;
+    margin: 0 9px;
+    font-size: 17px;
+}
+
+.filters span:hover {
+    color: #00a2ff;
+}
+
+.tasks {
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    padding: 3px 12px 15px;
+    height: max-content;
+    margin-top: 12px;
+    min-height: 40px;
+}
+
+.tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.active {
+    color: #0080ca;
+}
+
+.tasks .task:first-child {
+    padding-top: 5px;
+}
+
+.tasks .task:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.tasks .task input {
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.tasks .task label {
+    cursor: pointer;
+    font-size: 16.5px;
+    display: flex;
+    padding-left: 8px;
+    justify-content: start;
+}
+
+.task .task-name {
+    flex: 80;
+    padding-right: 8px;
+    display: flex;
+    align-items: flex-start;
+}
